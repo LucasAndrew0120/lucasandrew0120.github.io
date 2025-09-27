@@ -1,0 +1,12 @@
+/* 定义本地字体 */
+@font-face {
+    font-family: 'LXGW';
+    src: url('/fonts/LXGWWenKaiScreen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'LXGW', sans-serif;
+}
