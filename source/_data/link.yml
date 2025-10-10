@@ -1,0 +1,7 @@
+- class_name: 友链
+  class_desc: 那些人，那些事
+  link_list:
+    - name: AnTooLot's Blog
+      link: https://antoolot.top/
+      avatar: https://cdn.oss-storage-b2.antoolot.top/assets/Avatar_new.png
+      descr: 我们人品的一切可取之处，都该感谢沉默的教诲。
