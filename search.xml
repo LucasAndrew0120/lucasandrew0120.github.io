@@ -23,13 +23,19 @@
     
     
     <entry>
-      <title></title>
+      <title>博客更新日志</title>
       <link href="/2025/10/01/logs/"/>
       <url>/2025/10/01/logs/</url>
       
-        <content type="html"><![CDATA[<h1 id="logs"><a href="#logs" class="headerlink" title="logs"></a>logs</h1><hr><p>title: 博客更新日志<br>date: 2025-10-01<br>tags:<br>    - 分享</p><h2 id="description-这篇文章记录了博客的一些变更"><a href="#description-这篇文章记录了博客的一些变更" class="headerlink" title="description: 这篇文章记录了博客的一些变更"></a>description: 这篇文章记录了博客的一些变更</h2><blockquote><p>这篇文章记录了博客的一些变更</p></blockquote><h3 id="目前已更："><a href="#目前已更：" class="headerlink" title="目前已更："></a>目前已更：</h3><ul><li><strong>2025年10月5日</strong> 博客外观完成背景透明化，字体更换为霞鹜文楷</li><li><strong>2025年10月1日</strong> 博客背景图完成更换，顶部图去除，页脚遮罩去除，文章卡片的描述</li><li><strong>2025年10月15日</strong> 博客添加giscus评论系统，添加Snackbar标签显示，配置站内链接预加载（Instantpage）</li></ul><h3 id="未来计划："><a href="#未来计划：" class="headerlink" title="未来计划："></a>未来计划：</h3><ul><li>加入站点运行时间，文章卡片上字数统计和阅读时间</li><li>配置VS Code自动Push到GitHub库</li><li>加入一言</li><li>搭建图库并且图片云端化</li><li>搭建检索系统，无后端的评论系统</li><li>优化日间夜间模式更换，尝试根据访问者当地日升落时间自动更换</li><li>加入和风天气API</li></ul>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>这篇文章记录了博客的一些变更</p></blockquote><h3 id="目前已更："><a href="#目前已更：" class="headerlink" title="目前已更："></a>目前已更：</h3><ul><li><strong>2025年10月5日</strong> 博客外观完成背景透明化，字体更换为霞鹜文楷</li><li><strong>2025年10月1日</strong> 博客背景图完成更换，顶部图去除，页脚遮罩去除，文章卡片的描述</li><li><strong>2025年10月15日</strong> 博客添加giscus评论系统，添加Snackbar标签显示，配置站内链接预加载（Instantpage）</li></ul><h3 id="未来计划："><a href="#未来计划：" class="headerlink" title="未来计划："></a>未来计划：</h3><ul><li>加入站点运行时间，文章卡片上字数统计和阅读时间</li><li>配置VS Code自动Push到GitHub库</li><li>加入一言</li><li>搭建图库并且图片云端化</li><li>搭建检索系统，无后端的评论系统</li><li>优化日间夜间模式更换，尝试根据访问者当地日升落时间自动更换</li><li>加入和风天气API</li></ul>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+        </tags>
       
     </entry>
     
