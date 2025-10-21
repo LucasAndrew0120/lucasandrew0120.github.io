@@ -8,6 +8,7 @@
 }
 #page-header #post-info {
   bottom: 40px !important;
+  text-align: center;
 }
 #page-header #page-site-info {
   top: 140px !important;
@@ -28,7 +29,7 @@
   margin: -50px -40px 50px;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
