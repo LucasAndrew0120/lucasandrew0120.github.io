@@ -1,5 +1,4 @@
-#page-header,
-#page-header:before {
+#page-header {
   background: transparent !important;
 }
 #page-header.post-bg,
@@ -25,11 +24,13 @@
   }
 }
 .top-img {
+  height: 56vw;
+  max-height: 375px;
   height: 250px;
   margin: -50px -40px 50px;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
