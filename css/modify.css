@@ -3,7 +3,8 @@
 :root {
     --trans-light: rgba(255, 255, 255, 0.75);
     --trans-dark: rgba(25, 25, 25, 0.75);
-    --backdrop-filter: blur(12px) saturate(160%);
+    /* 注释掉 backdrop-filter 变量 */
+    /* --backdrop-filter: blur(12px) saturate(160%); */
 }
 
 /* ===== 强制主页文章卡片透明 ===== */
@@ -13,8 +14,9 @@ body .recent-post-item,
 #recent-posts .recent-post-item,
 .recent-post-item {
     background: var(--trans-light) !important;
-    backdrop-filter: var(--backdrop-filter) !important;
-    -webkit-backdrop-filter: var(--backdrop-filter) !important;
+    /* 注释掉毛玻璃效果 */
+    /* backdrop-filter: var(--backdrop-filter) !important; */
+    /* -webkit-backdrop-filter: var(--backdrop-filter) !important; */
     border-radius: 25px !important;
     border: none !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
@@ -63,8 +65,9 @@ body .recent-post-item,
 /* 侧边栏卡片透明 */
 #aside-content .card-widget {
     background: var(--trans-light) !important;
-    backdrop-filter: var(--backdrop-filter) !important;
-    -webkit-backdrop-filter: var(--backdrop-filter) !important;
+    /* 注释掉毛玻璃效果 */
+    /* backdrop-filter: var(--backdrop-filter) !important; */
+    /* -webkit-backdrop-filter: var(--backdrop-filter) !important; */
     border-radius: 18px !important;
     border: none !important;
 }
@@ -74,8 +77,9 @@ div#post,
 div#page,
 div#archive {
     background: var(--trans-light) !important;
-    backdrop-filter: var(--backdrop-filter) !important;
-    -webkit-backdrop-filter: var(--backdrop-filter) !important;
+    /* 注释掉毛玻璃效果 */
+    /* backdrop-filter: var(--backdrop-filter) !important; */
+    /* -webkit-backdrop-filter: var(--backdrop-filter) !important; */
     border-radius: 20px !important;
     border: none !important;
 }
@@ -153,9 +157,12 @@ div#archive {
   }
   
   /* 移动端减小模糊效果 */
+  /* 注释掉移动端的毛玻璃效果 */
+  /*
   #recent-posts .recent-post-item,
   #aside-content .card-widget {
       backdrop-filter: blur(8px) saturate(160%) !important;
       -webkit-backdrop-filter: blur(8px) saturate(160%) !important;
   }
+  */
 }
