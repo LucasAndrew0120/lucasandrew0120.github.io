@@ -1,4 +1,52 @@
-#page-header {
+/* modify.css - 透明化主题样式 */
+
+:root {
+    --trans-light: rgba(255, 255, 255, 0.75);
+    --trans-dark: rgba(25, 25, 25, 0.75);
+    --backdrop-filter: blur(12px) saturate(160%);
+}
+
+/* ===== 强制主页文章卡片透明 ===== */
+/* 使用最高优先级的选择器 */
+body div#recent-posts .recent-post-item,
+body .recent-post-item,
+#recent-posts .recent-post-item,
+.recent-post-item {
+    background: var(--trans-light) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    -webkit-backdrop-filter: var(--backdrop-filter) !important;
+    border-radius: 25px !important;
+    border: none !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 移除可能的背景图片 */
+#recent-posts .recent-post-item[style*="background"],
+.recent-post-item[style*="background"] {
+    background: var(--trans-light) !important;
+    background-image: none !important;
+}
+
+/* 确保内部所有元素透明 */
+#recent-posts .recent-post-item *:not(a):not(button):not(.btn) {
+    background: transparent !important;
+}
+
+/* 特别处理各个部分 */
+#recent-posts .recent-post-item .post-cover,
+#recent-posts .recent-post-item .post-cover img,
+#recent-posts .recent-post-item .post-content,
+#recent-posts .recent-post-item .post-info,
+#recent-posts .recent-post-item .post-meta-info,
+#recent-posts .recent-post-item .article-meta-wrap,
+#recent-posts .recent-post-item .post-meta,
+#recent-posts .recent-post-item .post-title {
+    background: transparent !important;
+}
+
+/* 页面头部透明 */
+#page-header,
+#page-header:before {
   background: transparent !important;
 }
 #page-header.post-bg,
@@ -7,25 +55,33 @@
 }
 #page-header #post-info {
   bottom: 40px !important;
-  text-align: center;
 }
 #page-header #page-site-info {
   top: 140px !important;
 }
-@media screen and (max-width: 768px) {
-  #page-header.not-home-page {
-    height: 200px !important;
-  }
-  #page-header #post-info {
-    bottom: 10px !important;
-  }
-  #page-header #page-site-info {
-    top: 100px !important;
-  }
+
+/* 侧边栏卡片透明 */
+#aside-content .card-widget {
+    background: var(--trans-light) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    -webkit-backdrop-filter: var(--backdrop-filter) !important;
+    border-radius: 18px !important;
+    border: none !important;
 }
+
+/* 文章页、归档页、普通页面透明 */
+div#post,
+div#page,
+div#archive {
+    background: var(--trans-light) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    -webkit-backdrop-filter: var(--backdrop-filter) !important;
+    border-radius: 20px !important;
+    border: none !important;
+}
+
+/* 顶部图片样式 */
 .top-img {
-  height: 56vw;
-  max-height: 375px;
   height: 250px;
   margin: -50px -40px 50px;
   border-top-left-radius: inherit;
@@ -38,20 +94,10 @@
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-@media screen and (max-width: 768px) {
-  .top-img {
-    height: 230px;
-    margin: -36px -14px 36px;
-  }
-}
-[data-theme='dark'] .top-img {
-  filter: brightness(0.8);
-}
+
+/* 页脚透明 */
 #footer:before {
-  background-color: rgba(255,255,255,0.5);
-}
-[data-theme='dark'] #footer:before {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.5) !important;
 }
 #footer-wrap,
 #footer-wrap a {
@@ -62,7 +108,54 @@
   -ms-transition: unset;
   transition: unset;
 }
+
+/* ===== 夜间模式 ===== */
+[data-theme='dark'] #recent-posts .recent-post-item,
+[data-theme='dark'] .recent-post-item {
+    background: var(--trans-dark) !important;
+}
+
+[data-theme='dark'] #aside-content .card-widget,
+[data-theme='dark'] div#post,
+[data-theme='dark'] div#page,
+[data-theme='dark'] div#archive {
+    background: var(--trans-dark) !important;
+}
+
+[data-theme='dark'] .top-img {
+  filter: brightness(0.8);
+}
+
+[data-theme='dark'] #footer:before {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
 [data-theme='dark'] #footer-wrap,
 [data-theme='dark'] #footer-wrap a {
   color: var(--light-grey);
+}
+
+/* 移动端响应式 */
+@media screen and (max-width: 768px) {
+  #page-header.not-home-page {
+    height: 200px !important;
+  }
+  #page-header #post-info {
+    bottom: 10px !important;
+  }
+  #page-header #page-site-info {
+    top: 100px !important;
+  }
+  
+  .top-img {
+    height: 230px;
+    margin: -36px -14px 36px;
+  }
+  
+  /* 移动端减小模糊效果 */
+  #recent-posts .recent-post-item,
+  #aside-content .card-widget {
+      backdrop-filter: blur(8px) saturate(160%) !important;
+      -webkit-backdrop-filter: blur(8px) saturate(160%) !important;
+  }
 }
