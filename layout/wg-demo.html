@@ -1,0 +1,115 @@
+<div class="wg">
+        <audio id="wg__audio"></audio>
+        <div class="wg__act">
+            <div class="wg__act_capsule">
+                <div class="wg__act_capsule--button" data-tippy-content="打开 WebGroove 主窗口">
+                    <img src="" alt="专辑封面" class="wg__act_image wg__act_capsule--button--image" aria-label="专辑封面" draggable="false">
+                </div>
+                <div class="wg__act_capsule--control-area">
+                    <span class="wg__act_capsule--control-area--song-title" data-tippy-content="当前正在播放"><span class="wg__act_marquee-text wg__act_capsule--control-area--song-title--marquee"></span></span>
+                    <div class="wg__act_capsule--progress-bar">
+                        <div class="wg__act_capsule--progress-bar--time-bar">
+                            <span class="wg__act_capsule--progress-bar--time-bar--display-time wg__act_capsule--progress-bar--time-bar--current-time" data-tippy-content="当前播放时长">0:00</span>
+                            <span class="wg__act_capsule--progress-bar--time-bar--display-time wg__act_capsule--progress-bar--time-bar--total-time" data-tippy-content="总时长">0:00</span>
+                        </div>
+                        <div class="wg__act_capsule--progress-bar--track" data-tippy-content="使用进度条快速调整">
+                            <!-- 已播放进度 -->
+                            <div class="wg__act_capsule--progress-bar--track--fill-area">
+                                <div class="wg__act_capsule--progress-bar--track--fill-area--fill"></div>
+                            </div>
+                            <div class="wg__act_capsule--progress-bar--track--thumb" draggable="false"></div>
+                        </div>
+                    </div>
+                    <div class="wg__act_capsule--control-area--bar">
+                        <button class="wg__act_capsule--control-area--bar--button wg__act_capsule--control-area--bar--button--volume" data-tippy-content="调节音量" aria-label="点此调节音量"></button>
+                        <button class="wg__act_capsule--control-area--bar--button wg__act_capsule--control-area--bar--button--last" data-tippy-content="上一首" aria-label="播放上一首"></button>
+                        <button class="wg__act_capsule--control-area--bar--button wg__act_capsule--control-area--bar--button--play" data-tippy-content="播放" aria-label="播放"></button>
+                        <button class="wg__act_capsule--control-area--bar--button wg__act_capsule--control-area--bar--button--next" data-tippy-content="下一首" aria-label="播放下一首"></button>
+                        <button class="wg__act_capsule--control-area--bar--button wg__act_capsule--control-area--bar--button--repeat" data-tippy-content="顺序播放" aria-label="顺序播放"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wg__act_window">
+            <div class="wg__act_window--main">
+                <div class="wg__act_window--window-title wg__act_window--main--window-title">
+                    <span class="wg__act_window-text wg__act_window-text--title">播放详情 - WebGroove <strong style="font-style: italic;" data-tippy-content="WebGroove 阿尔法测试">Alpha</strong></span>
+                    <div class="wg__act_window--window-title-close-button wg__act_window--main--window-title-close-button" data-tippy-content="关闭主窗口"></div>
+                </div>
+                <div class="wg__act_windows wg__act_window--main-content">
+                    <div class="wg__act_window--main-content--info">
+                        <img src="" alt="专辑封面" class="wg__act_image wg__act_window--image" data-tippy-content="专辑封面" aria-label="专辑封面" draggable="false">
+                        <h2 class="wg__act_window-text wg__act_window-text--song" data-tippy-content="歌曲名" aria-label="歌曲名"><span class="wg__act_marquee-text wg__act_window-text--song--marquee"></span></h2>
+                        <span class="wg__act_window-text wg__act_window-text--artist" data-tippy-content="参与创作的艺术家" aria-label="参与创作的艺术家"><span class="wg__act_marquee-text wg__act_window-text--artist--marquee"></span></span>
+                    </div>
+                    <div class="wg__act_window--main-content--barrier"></div>
+                    <div class="wg__act_window--main-content--cards">
+                        <div class="wg__act_window--main-content--cards--card-link" id="songlinks">
+                            <a href="" class="wg__act_window--main-content--cards--card-link-button wg__act_window--main-content--cards--card-link-button--spotify" id="spotify-button" data-tippy-content="在 Spotify 上收听">
+                                <span class="wg__act_window--main-content--cards--card-link-button-icon wg__act_window--main-content--cards--card-link-button-icon--spotify"></span>
+                            </a >
+                            <a href="" class="wg__act_window--main-content--cards--card-link-button wg__act_window--main-content--cards--card-link-button--qqmusic" id="qqmusic-button" data-tippy-content="在 QQ 音乐 上收听">
+                                <span class="wg__act_window--main-content--cards--card-link-button-icon wg__act_window--main-content--cards--card-link-button-icon--qqmusic"></span>
+                            </a >
+                            <a href="" class="wg__act_window--main-content--cards--card-link-button wg__act_window--main-content--cards--card-link-button--ncm" id="ncm-button" data-tippy-content="在 网易云音乐 上收听">
+                                <span class="wg__act_window--main-content--cards--card-link-button-icon wg__act_window--main-content--cards--card-link-button-icon--ncm"></span>
+                            </a >
+                            <div class="wg__act_window--main-content--cards--card-link-button wg__act_window--main-content--cards--card-link-button--others" data-tippy-content="在其他平台上收听">
+                                <span class="wg__act_window--main-content--cards--card-link-button-icon wg__act_window--main-content--cards--card-link-button-icon--others">其他音源</span>
+                            </div>
+                        </div>
+                        <div class="wg__act_window--main-content--cards--card wg__act_window--main-content--cards--card-playlist">
+                            <div class="wg__act_window--main-content--cards--card--title wg__act_window--main-content--cards--card-playlist--title">
+                                <span class="wg__act_window--main-content--cards--card--title-text wg__act_window--main-content--cards--card-playlist--title-text">播放队列（<span class="wg__act_window--main-content--cards--card-playlist--title-text--num">NaN</span>）</span>
+                            </div>
+                            <ul class="wg__act_window--main-content--cards--card-playlist--list">
+                            </ul>
+                        </div>
+                        <!--                         
+                        <div class="wg__act_window--main-content--cards--card wg__act_window--main-content--cards--card-cycle">
+                            <div class="wg__act_window--main-content--cards--card--title wg__act_window--main-content--cards--card-cycle--title">
+                                <span class="wg__act_window--main-content--cards--card--title-text wg__act_window--main-content--cards--card-cycle--text--title wg__act_window--main-content--cards--card-cycle--text--title-default">A / B 循环</span>
+                                <span class="wg__act_window--main-content--cards--card--title-text wg__act_window--main-content--cards--card-cycle--text--title wg__act_window--main-content--cards--card-cycle--text--title-state">未启用</span>
+                            </div>
+                            <ul class="wg__act_window--main-content--cards--card-cycle--list">
+                                <li class="wg__act_window--main-content--cards--card-cycle--list">
+                                </li>
+                            </ul>
+                            <button class="wg__act_window--main-content--cards--card-cycle--button--add" data-tippy-content="添加新循环" aria-label="添加新循环"><span class="wg__act_window--main-content--cards--card-cycle--button--add--text">添加新循环</span></button>
+                        </div>
+                        -->
+                        <div class="wg__act_window--main-content--cards--card wg__act_window--main-content--cards--card-desktoplyric">
+                            <div class="wg__act_window--main-content--cards--card--title wg__act_window--main-content--cards--card-desktoplyric--title">
+                                <span class="wg__act_window--main-content--cards--card--title-text wg__act_window--main-content--cards--card-desktoplyric--text--title">桌面歌词</span>
+                            </div>
+                            <div class="wg__act_window--main-content--cards--card-desktoplyric--content">
+                                <span class="wg__act_window--main-content--cards--card-desktoplyric--content--text">
+                                    WebGroove 现已支持 Windows 上使用歌名匹配的桌面歌词软件。
+                                </span>
+                                <button class="wg__act_window--main-content--cards--card-desktoplyric--button" data-tippy-content="了解关于桌面歌词的支持信息" aria-label="了解关于桌面歌词的支持信息"><span class="wg__act_window--main-content--cards--card-desktoplyric--button--text">了解详情</span></button>
+                            </div>
+                        </div>
+                        <div class="wg__act_window--main-content--cards--card-footer">
+                            <a href=" " class="wg__act_window--main-content--cards--card-footer-button wg__act_window--main-content--cards--card-footer-button--github"   data-tippy-content="查看 WebGroove 的 GitHub 仓库" aria-label="去往 WebGroove 的 GitHub 仓库"></a >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wg__act_window--backdrop"></div>
+            <div class="wg__act_window--albumartviewer" id="wg__act_window--albumartviewer-drawer">
+                <div class="wg__act_window--albumartviewer--backdrop"></div>
+                <div class="wg__act_window--albumartviewer--main" role="dialog" aria-modal="true" aria-labelledby="aav-title">
+                    <div class="wg__act_window--albumartviewer--main--content">
+                        <div class="wg__act_window--window-title wg__act_window--albumartviewer--window-title">
+                            <div class="wg__act_window--albumartviewer--window-title--touch-strip"></div>
+                            <span class="wg__act_window-text wg__act_window-text--title" id="aav-title">查看专辑封面 - WebGroove <strong style="font-style: italic;" data-tippy-content="WebGroove 阿尔法测试">Alpha</strong></span>
+                            <button class="wg__act_window--window-title-close-button wg__act_window--albumartviewer--window-title-close-button" data-tippy-content="关闭查看器"></button>
+                        </div>
+                        <div class="wg__act_window--albumartviewer--main--content--viewarea">
+                            <img src="" alt="专辑封面" class="wg__act_window--albumartviewer--main--content--viewarea--image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

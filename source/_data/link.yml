@@ -1,7 +1,14 @@
-- class_name: 友链
-  class_desc: 那些人，那些事
+- class_name: 友谊地久天长
+  flink_style: volantis
+  random: flase
   link_list:
+    - name: GuYue的小破站
+      link: https://www.guyue.uno/
+      avatar: https://www.guyue.uno/images/1750151094258.jpg
+      descr: 一个平平无奇的博客
+      siteshot: https://www.guyue.uno/images/1750166093540.png
     - name: AnTooLot's Blog
       link: https://antoolot.top/
       avatar: https://cdn.oss-storage-b2.antoolot.top/assets/Avatar_new.png
       descr: 我们人品的一切可取之处，都该感谢沉默的教诲。
+      siteshot: https://pic1.imgdb.cn/item/68fad1ba3203f7be0092995d.png

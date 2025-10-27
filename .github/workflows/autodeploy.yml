@@ -1,0 +1,69 @@
+name: Hexo编译发布静态网页至Github Page
+
+on:
+  push:
+    branches:
+      - main  #默认分支
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查源码
+        uses: actions/checkout@v4
+        with:
+          ref: main #默认分支
+          path: blog  #源码在ubuntu服务器中的存放目录
+          fetch-depth: 0 #获取所有分支和标签的所有历史记录
+      
+      - name: 获取文章更新的最新时间
+        run: |
+          git ls-files -z '*.md' | while read -d '' path; do
+            touch -d "$(git log -1 --format="@%ct" "$path")" "$path"
+          done
+        working-directory: ./blog/source/_posts
+          
+      - name: 安装Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.20.0" #对应本地使用版本
+          cache: 'npm' #启用npm依赖缓存
+          cache-dependency-path: 'workflows/package-lock.json' #指定缓存依赖的 lock 文件路径
+
+      - name: 下载依赖
+        run: npm install
+        working-directory: ./blog
+
+      - name: 安装Hexo
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install -g hexo-cli
+        working-directory: ./blog
+
+      - name: 缓存Hexo
+        id: cache-npm
+        uses: actions/cache@v4
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: 编译生成静态网页
+        run: |
+          hexo clean        
+          hexo generate 
+        working-directory: ./blog          
+
+      - name: 发布至GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ Hexo }} #此处的PERSONAL_TOKEN改为之前设置的设置身份验证令牌的名称
+          publish_dir: ./blog/public
+          external_repository: LucasAndrew0120/lucasandrew0120.github.io  #更改为仓库2的名字, username是你的用户名
+          publish_branch: main  #仓库2发布静态页面的对应分支
