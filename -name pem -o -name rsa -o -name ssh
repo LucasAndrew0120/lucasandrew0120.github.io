@@ -1,0 +1,32 @@
+[33mcommit 7759b783f3a81d38570c497a5b74b89b56102b81[m
+Author: LucasAndrew0120 <axuhaoyang@126.com>
+Date:   Mon Oct 27 23:14:34 2025 +0800
+
+    github actions
+
+.github/workflows/autodeploy.yml
+_config.yml
+css/custom.css
+css/modify.css
+github-deploy-key
+github-deploy-key.pub
+js/wg-demo.js
+layout/index.pug
+layout/wg-demo.html
+package-lock.json
+package.json
+source/_data/link.yml
+source/_posts/Lucas'thinkings.md
+source/_posts/Lucas_and_his_friends.md
+source/_posts/logs.md
+source/_posts/webdav_tools_share.md
+source/css/fonts.css
+source/css/modify.css
+source/css/wg-demo.css
+source/free/index.md
+source/free/photos/anime/index.md
+source/free/photos/index.md
+source/free/photos/life/index.md
+source/free/photos/sky/index.md
+source/link/index.md
+source/pages/index.md
