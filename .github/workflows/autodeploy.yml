@@ -1,69 +1,48 @@
-name: Hexo编译发布静态网页至Github Page
+name: DoubleAm's Blog CI/CD # 脚本 workflow 名称
 
 on:
   push:
-    branches:
-      - main  #默认分支
+    branches: [main, master] # 当监测 main,master 的 push
+    paths: # 监测所有 source 目录下的文件变动，所有 yml,json 后缀文件的变动。
+      - '*.json'
+      - '**.yml'
+      - '**/source/**'
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
+  blog: # 任务名称
+    timeout-minutes: 30 # 设置 30 分钟超时
+    runs-on: ubuntu-latest # 指定最新 ubuntu 系统
     steps:
-      - name: 检查源码
-        uses: actions/checkout@v4
-        with:
-          ref: main #默认分支
-          path: blog  #源码在ubuntu服务器中的存放目录
-          fetch-depth: 0 #获取所有分支和标签的所有历史记录
-      
-      - name: 获取文章更新的最新时间
-        run: |
-          git ls-files -z '*.md' | while read -d '' path; do
-            touch -d "$(git log -1 --format="@%ct" "$path")" "$path"
-          done
-        working-directory: ./blog/source/_posts
-          
-      - name: 安装Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22.20.0" #对应本地使用版本
-          cache: 'npm' #启用npm依赖缓存
-          cache-dependency-path: 'workflows/package-lock.json' #指定缓存依赖的 lock 文件路径
-
-      - name: 下载依赖
-        run: npm install
-        working-directory: ./blog
-
-      - name: 安装Hexo
-        run: |
-          export TZ='Asia/Shanghai'
-          npm install -g hexo-cli
-        working-directory: ./blog
-
-      - name: 缓存Hexo
-        id: cache-npm
-        uses: actions/cache@v4
+      - uses: actions/checkout@v2 # 拉取仓库代码
+      - uses: actions/setup-node@v2 # 设置 node.js 环境
+      - name: Cache node_modules # 缓存 node_modules，提高编译速度，毕竟每月只有 2000 分钟。
+        uses: actions/cache@v2 # 亲测 Github 服务器编译速度比我自己电脑都快，如果每次构建按5分钟计算，我们每个月可以免费部署 400 次，Github yyds！！！
         env:
           cache-name: cache-node-modules
         with:
-          path: node_modules
+          path: ~/.npm
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-
-      - name: 编译生成静态网页
+      - name: Init Node.js # 安装源代码所需插件
         run: |
-          hexo clean        
-          hexo generate 
-        working-directory: ./blog          
+          npm install
+          echo "init node successful"
+      - name: Install Hexo-cli # 安装 Hexo
+        run: |
+          npm install -g hexo-cli --save
+          echo "install hexo successful"
+      - name: Build Blog # 编译创建静态博客文件
+        run: |
+          hexo clean
+          hexo g
+          echo "build blog successful"
+      - name: Deploy DoubleAm's Blog # 设置 git 信息并推送静态博客文件
+        run: |
+          git config --global user.name "doubleam"
+          git config --global user.email "admin@biugle.cn"
+          hexo deploy
 
-      - name: 发布至GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          personal_token: ${{ Hexo }} #此处的PERSONAL_TOKEN改为之前设置的设置身份验证令牌的名称
-          publish_dir: ./blog/public
-          external_repository: LucasAndrew0120/lucasandrew0120.github.io  #更改为仓库2的名字, username是你的用户名
-          publish_branch: main  #仓库2发布静态页面的对应分支
+      - run: echo "Deploy Successful!"

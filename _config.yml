@@ -102,7 +102,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:LucasAndrew0120/lucasandrew0120.github.io.git
+  repo: https://{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}@github.com/LucasAndrew0120/lucasandrew0120.github.io.git,main
   branch: main  # 或 master，根据你的仓库设置
 
 # RSS订阅：https://github.com/hexojs/hexo-generator-feed
