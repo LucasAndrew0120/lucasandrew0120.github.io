@@ -2,9 +2,13 @@
 title: 依赖于WebDav实现同步的软件分享
 date: 2025-09-26 08:22:08
 top: 5
+cover: https://pub-f2fe12f247d04d8f8890d5b24f8e6a37.r2.dev/rsdld-cover-20251104-i3m9q.webp
 tags:
     - 分享
 description: 对于WebDav的原理不多赘述，我们具体来看一下WebDav的应用，在国内环境下，最好的WebDav服务提供商就是坚果云，免费，不限应用数
+copyright_author: Lucas Andrew
+copyright_author_href: https://github.com/LucasAndrew0120
+copyright_info: 此文章版权归 Lucas Andrew 所有，如有转载，请注明来自 <a href="https://lris625.top/">Lucas的小博客</a>
 ---
 >对于WebDav的原理不多赘述，我们具体来看一下WebDav的应用，在国内环境下，最好的WebDav服务提供商就是坚果云，免费，无线应用数。
 
