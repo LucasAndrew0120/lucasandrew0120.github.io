@@ -1576,7 +1576,7 @@ template {
   --tab-button-hover-bg: #dcdcdc;
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
-  --card-meta: #858585;
+  --card-meta: #81776e;
   --sidebar-bg: #f6f8fa;
   --sidebar-menu-bg: #fff;
   --btn-hover-color: #ff7242;
@@ -4884,6 +4884,14 @@ maxWidth1200()
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.page .card-tags {
+  -webkit-box-ordinal-group: 4;
+  -moz-box-ordinal-group: 4;
+  -o-box-ordinal-group: 4;
+  -ms-flex-order: 4;
+  -webkit-order: 4;
+  order: 4;
 }
 @-moz-keyframes more-btn-move {
   0%, 100% {
