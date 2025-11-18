@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+echo ".ssh/" >> .gitignore
+echo "*.pem" >> .gitignore
+echo "*.key" >> .gitignore
+echo "config/secrets/" >> .gitignore

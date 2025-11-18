@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Hexo 一键部署",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "hexo clean; hexo generate; cd public; git add .; git commit -m '部署博客'; git push origin main"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
+ 
