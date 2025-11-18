@@ -4885,6 +4885,14 @@ maxWidth1200()
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.page .card-tags {
+  -webkit-box-ordinal-group: 4;
+  -moz-box-ordinal-group: 4;
+  -o-box-ordinal-group: 4;
+  -ms-flex-order: 4;
+  -webkit-order: 4;
+  order: 4;
+}
 @-moz-keyframes more-btn-move {
   0%, 100% {
     -webkit-transform: translateX(0);
