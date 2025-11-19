@@ -15,8 +15,27 @@
     <atom:link href="https://lris625.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Lucas的小博客</description>
-    <pubDate>Tue, 04 Nov 2025 15:19:31 GMT</pubDate>
+    <pubDate>Wed, 19 Nov 2025 13:10:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>在配置Twikoo评论系统中遇到的一些问题和解决办法</title>
+      <link>https://lris625.top/2025/11/19/Twikoo1/</link>
+      <guid>https://lris625.top/2025/11/19/Twikoo1/</guid>
+      <pubDate>Wed, 19 Nov 2025 13:00:35 GMT</pubDate>
+      
+      <description>Twikoo是一个非常优秀的评论系统，完美契合前端静态博客，但是它的文档和网络上一些教程仍有疏漏，于是我想做一些补充</description>
+      
+      
+      
+      
+      
+      <category domain="https://lris625.top/tags/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <comments>https://lris625.top/2025/11/19/Twikoo1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Lucas和他的朋友们</title>
