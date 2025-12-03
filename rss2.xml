@@ -15,8 +15,29 @@
     <atom:link href="https://lris625.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Lucas的小博客</description>
-    <pubDate>Wed, 19 Nov 2025 13:10:59 GMT</pubDate>
+    <pubDate>Wed, 03 Dec 2025 13:37:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>使用Docker和1Panel部署Openlist</title>
+      <link>https://lris625.top/2025/12/03/docker-1Panel/</link>
+      <guid>https://lris625.top/2025/12/03/docker-1Panel/</guid>
+      <pubDate>Wed, 03 Dec 2025 13:24:00 GMT</pubDate>
+      
+      <description>本文将探讨Docker原生环境和1panel面板分别部署Openlist服务的异同</description>
+      
+      
+      
+      
+      
+      <category domain="https://lris625.top/tags/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      <category domain="https://lris625.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      
+      <comments>https://lris625.top/2025/12/03/docker-1Panel/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>在配置Twikoo评论系统中遇到的一些问题和解决办法</title>
