@@ -4,24 +4,24 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Lucas的小博客——欲买桂花同载酒，终不似，少年游</title>
-    <link>https://lris625.top/</link>
+    <link>https://blog.lris625.top/</link>
     
     <image>
-      <url>https://lris625.top/icon.png</url>
+      <url>https://blog.lris625.top/icon.png</url>
       <title>Lucas的小博客——欲买桂花同载酒，终不似，少年游</title>
-      <link>https://lris625.top/</link>
+      <link>https://blog.lris625.top/</link>
     </image>
     
-    <atom:link href="https://lris625.top/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://blog.lris625.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Lucas的小博客</description>
-    <pubDate>Wed, 03 Dec 2025 13:38:46 GMT</pubDate>
+    <pubDate>Fri, 05 Dec 2025 02:55:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>使用Docker和1Panel部署Openlist</title>
-      <link>https://lris625.top/2025/12/03/docker-1Panel/</link>
-      <guid>https://lris625.top/2025/12/03/docker-1Panel/</guid>
+      <link>https://blog.lris625.top/2025/12/03/docker-1Panel/</link>
+      <guid>https://blog.lris625.top/2025/12/03/docker-1Panel/</guid>
       <pubDate>Wed, 03 Dec 2025 13:24:00 GMT</pubDate>
       
       <description>本文将探讨Docker原生环境和1panel面板分别部署Openlist服务的异同</description>
@@ -30,19 +30,19 @@
       
       
       
-      <category domain="https://lris625.top/tags/%E6%8A%80%E6%9C%AF/">技术</category>
+      <category domain="https://blog.lris625.top/tags/%E6%8A%80%E6%9C%AF/">技术</category>
       
-      <category domain="https://lris625.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      <category domain="https://blog.lris625.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
       
       
-      <comments>https://lris625.top/2025/12/03/docker-1Panel/#disqus_thread</comments>
+      <comments>https://blog.lris625.top/2025/12/03/docker-1Panel/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>在配置Twikoo评论系统中遇到的一些问题和解决办法</title>
-      <link>https://lris625.top/2025/11/19/Twikoo1/</link>
-      <guid>https://lris625.top/2025/11/19/Twikoo1/</guid>
+      <link>https://blog.lris625.top/2025/11/19/Twikoo1/</link>
+      <guid>https://blog.lris625.top/2025/11/19/Twikoo1/</guid>
       <pubDate>Wed, 19 Nov 2025 13:00:35 GMT</pubDate>
       
       <description>Twikoo是一个非常优秀的评论系统，完美契合前端静态博客，但是它的文档和网络上一些教程仍有疏漏，于是我想做一些补充</description>
@@ -51,17 +51,17 @@
       
       
       
-      <category domain="https://lris625.top/tags/%E6%8A%80%E6%9C%AF/">技术</category>
+      <category domain="https://blog.lris625.top/tags/%E6%8A%80%E6%9C%AF/">技术</category>
       
       
-      <comments>https://lris625.top/2025/11/19/Twikoo1/#disqus_thread</comments>
+      <comments>https://blog.lris625.top/2025/11/19/Twikoo1/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Lucas和他的朋友们</title>
-      <link>https://lris625.top/2025/09/28/Lucas_and_his_friends/</link>
-      <guid>https://lris625.top/2025/09/28/Lucas_and_his_friends/</guid>
+      <link>https://blog.lris625.top/2025/09/28/Lucas_and_his_friends/</link>
+      <guid>https://blog.lris625.top/2025/09/28/Lucas_and_his_friends/</guid>
       <pubDate>Sun, 28 Sep 2025 04:57:15 GMT</pubDate>
       
       <description>林花谢了春红，太匆匆，无奈朝来寒雨晚来风</description>
@@ -70,17 +70,17 @@
       
       
       
-      <category domain="https://lris625.top/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      <category domain="https://blog.lris625.top/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
       
       
-      <comments>https://lris625.top/2025/09/28/Lucas_and_his_friends/#disqus_thread</comments>
+      <comments>https://blog.lris625.top/2025/09/28/Lucas_and_his_friends/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>依赖于WebDav实现同步的软件分享</title>
-      <link>https://lris625.top/2025/09/26/webdav_tools_share/</link>
-      <guid>https://lris625.top/2025/09/26/webdav_tools_share/</guid>
+      <link>https://blog.lris625.top/2025/09/26/webdav_tools_share/</link>
+      <guid>https://blog.lris625.top/2025/09/26/webdav_tools_share/</guid>
       <pubDate>Fri, 26 Sep 2025 00:22:08 GMT</pubDate>
       
       <description>对于WebDav的原理不多赘述，我们具体来看一下WebDav的应用，在国内环境下，最好的WebDav服务提供商就是坚果云，免费，不限应用数</description>
@@ -89,10 +89,10 @@
       
       
       
-      <category domain="https://lris625.top/tags/%E5%88%86%E4%BA%AB/">分享</category>
+      <category domain="https://blog.lris625.top/tags/%E5%88%86%E4%BA%AB/">分享</category>
       
       
-      <comments>https://lris625.top/2025/09/26/webdav_tools_share/#disqus_thread</comments>
+      <comments>https://blog.lris625.top/2025/09/26/webdav_tools_share/#disqus_thread</comments>
       
     </item>
     
